@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.44.1
+
+- Fixed: the app could crash when using the previous / next buttons in the player, when Up next started the next video, or when Jellyfin switched to server transcoding
+- Fixed: 10-second skips right after a stream starts no longer jump back to the beginning
+
 ## 0.44.0
 
 First public beta.
