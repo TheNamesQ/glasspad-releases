@@ -1,0 +1,40 @@
+# Publishes a beta release. The APK arrives on a temporary "incoming" branch
+# (incoming/VERSION, incoming/notes.md, incoming/GlassPad-<version>-beta.apk),
+# gets attached to a release tagged on main, and the branch is deleted again.
+name: Publish release
+
+on:
+  push:
+    branches: [incoming]
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Read release info
+        shell: bash
+        run: |
+          VERSION=$(tr -d '[:space:]' < incoming/VERSION)
+          test -f "incoming/GlassPad-${VERSION}-beta.apk"
+          (cd incoming && sha256sum "GlassPad-${VERSION}-beta.apk" > "GlassPad-${VERSION}-beta.apk.sha256")
+          echo "VERSION=${VERSION}" >> "$GITHUB_ENV"
+
+      - uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ env.VERSION }}-beta
+          target_commitish: main
+          name: GlassPad ${{ env.VERSION }} beta
+          body_path: incoming/notes.md
+          make_latest: true
+          files: |
+            incoming/*.apk
+            incoming/*.sha256
+
+      - name: Remove incoming branch
+        if: always()
+        run: git push origin --delete incoming
