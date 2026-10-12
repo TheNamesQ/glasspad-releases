@@ -16,6 +16,26 @@ No accounts, no ads, no tracking. By default it only talks to servers on your ho
 
 ---
 
+## Screenshots
+
+<p align="center">
+  <img src="assets/screenshots/home.png" alt="Home screen on the glasses" width="860"><br>
+  <sub>Home screen: continue watching, apps, clock, battery and notifications</sub>
+</p>
+
+<table>
+  <tr>
+    <td width="50%"><img src="assets/screenshots/videos.png" alt="Videos on the phone, by folder"><br><sub>Your phone's videos, by folder</sub></td>
+    <td width="50%"><img src="assets/screenshots/folder.png" alt="Videos in a folder, with watch progress"><br><sub>Inside a folder, with watch progress</sub></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="assets/screenshots/home-assistant.png" alt="Home Assistant tiles"><br><sub>Home Assistant: lights, scenes and switches</sub></td>
+    <td width="50%"><img src="assets/screenshots/help.png" alt="Built-in gesture help"><br><sub>Built-in help for the phone gestures</sub></td>
+  </tr>
+</table>
+
+<sub>Screenshots show demo content, as seen on the glasses.</sub>
+
 ## Features
 
 ### Control from your phone
