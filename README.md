@@ -6,7 +6,9 @@
 
 **Your phone is the remote. Your glasses are the screen.**
 
-GlassPad is a free Android app for VITURE display glasses. It shows a big-screen home and video player on the glasses, and turns your phone into a touchpad, air mouse or simple remote to control it.
+GlassPad is a free Android app for **VITURE Beast** XR glasses. Plug the glasses into your phone and GlassPad opens a big-screen home on them, with your own videos, network shares, Jellyfin library and Home Assistant in one place. Your phone becomes the controller: use it as a touchpad, an air mouse or a simple remote, and let its screen go dark while the video keeps playing on the glasses.
+
+No accounts, no ads, no tracking. By default it only talks to servers on your home network.
 
 > **Beta.** This is an early build for people who like trying new things. Expect rough edges, and please report them. See [Feedback](#feedback).
 
@@ -14,14 +16,43 @@ GlassPad is a free Android app for VITURE display glasses. It shows a big-screen
 
 ---
 
-## What it does
+## Features
 
-- **Three ways to control it:** touchpad (like a laptop), air mouse (point the phone), or remote (taps and swipes for play, seek and volume).
-- **Plays your videos** from the phone, SMB network shares (NAS or computer) and Jellyfin, with continue watching, subtitles, audio tracks, playback speed and skip intro.
-- **Phone screen dims** while the video keeps playing on the glasses, to save battery.
-- **Home Assistant tiles** in the player: switch lights and scenes without leaving the video.
-- **Notifications on the glasses** (optional), with quick replies.
-- **Backup and restore** of all settings to one file, with an optional password for saved passwords and tokens.
+### Control from your phone
+- **Touchpad:** move the pointer with one finger, like a laptop. Two fingers scroll.
+- **Air mouse:** point the phone at what you want, using its motion sensor.
+- **Remote:** big, simple taps and swipes for play, seek and volume.
+- **Edge strips (optional):** slide along the edges of the phone screen to scroll, change the volume or seek. Width is adjustable.
+- **Dim and lock:** the phone screen goes dark while you watch, and can be locked against accidental touches.
+
+### Home screen on the glasses
+- Hero banner with what you're watching and what's next in Jellyfin.
+- **Continue watching** across phone, network and Jellyfin videos. You choose which sources show up.
+- Clock, phone battery (with charging state) and notifications at a glance.
+
+### Your videos, wherever they are
+- **On the phone:** browse videos by folder, with thumbnails.
+- **Network shares:** SMB shares from a NAS or computer. Add as many servers as you like.
+- **Jellyfin:** movies, series and seasons, with posters, ratings, genres and watched status. Progress syncs back to your server.
+
+### Player
+- Subtitles (several styles), audio track selection and playback speed.
+- Skip intro, **Up next** with auto-play, previous / next and 10-second skips.
+- Video fit and size options, so the picture sits comfortably in your view.
+- Playback controls in the phone's notification and lock screen.
+
+### Smart home
+- **Home Assistant tiles** for lights, switches and scenes, on their own screen and in a menu inside the player, so you can dim the lights without stopping the movie.
+- Several Home Assistant servers supported, for example home and a holiday place.
+
+### Phone notifications (optional)
+- See your phone's notifications on the glasses while you watch, and send quick replies.
+
+### Setup and settings
+- A short welcome flow on first launch.
+- **Full screen** or **Desktop window** display modes, with adjustable size.
+- Backup and restore of all settings to one file, with an optional password to include saved passwords and tokens.
+- A diagnostics report you can share when something goes wrong.
 
 ## Requirements
 
