@@ -1,0 +1,37 @@
+name: Bug report
+description: Something doesn't work as expected
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: GlassPad version
+      description: Settings › About › Version
+      placeholder: 0.44.0
+    validations:
+      required: true
+  - type: input
+    id: phone
+    attributes:
+      label: Phone and Android version
+      placeholder: Pixel 9, Android 16
+    validations:
+      required: true
+  - type: input
+    id: glasses
+    attributes:
+      label: Glasses
+      placeholder: VITURE Beast
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostics (optional, recommended)
+      description: In GlassPad, Settings › About › Share diagnostics, then paste it here. It contains no passwords or tokens.
+      render: text

@@ -1,0 +1,14 @@
+name: Feature request
+description: An idea to make GlassPad better
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like GlassPad to do?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: How would you use it?
