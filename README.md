@@ -34,6 +34,11 @@ No accounts, no ads, no tracking. By default it only talks to servers on your ho
   </tr>
 </table>
 
+<p align="center">
+  <img src="assets/screenshots/cinema.png" alt="Cinema mode" width="860"><br>
+  <sub>Cinema mode: your video on the screen of a dark cinema hall</sub>
+</p>
+
 <sub>Screenshots show demo content, as seen on the glasses.</sub>
 
 ## Features
@@ -60,6 +65,8 @@ No accounts, no ads, no tracking. By default it only talks to servers on your ho
 - Skip intro, **Up next** with auto-play, previous / next and 10-second skips.
 - Video fit and size options, so the picture sits comfortably in your view.
 - Playback controls in the phone's notification and lock screen.
+- **Cinema mode:** watch inside a dark cinema hall, with three screen sizes, room light presets and auto dim when the film starts.
+- **Picture in picture:** keep the video playing in a small window while you browse.
 
 ### Smart home
 - **Home Assistant tiles** for lights, switches and scenes, on their own screen and in a menu inside the player, so you can dim the lights without stopping the movie.

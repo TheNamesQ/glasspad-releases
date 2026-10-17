@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.51.0
+
+New
+- **Cinema mode:** watch inside a dark cinema hall. Open it from the new Cinema button in the player.
+  - Three screen sizes: the screen grows on the wall, the hall stays put
+  - Room light presets: Dim, Medium, High, Bright
+  - Auto dim: the lights fade to dark when the film starts (5 to 30 seconds, you pick how dark) and come back up on pause
+- **Picture in picture:** shrink the playing video into a small window and keep browsing. Click it to go back to full screen.
+- The app has more memory headroom for high-bitrate videos
+
+Fixed
+- Crash after marking a Jellyfin movie as watched and going back to the library
+
 ## 0.44.1
 
 - Fixed: the app could crash when using the previous / next buttons in the player, when Up next started the next video, or when Jellyfin switched to server transcoding
